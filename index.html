@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mukund - Personal Website</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+<link rel="stylesheet" href="style.css"> <!-- Link to your CSS -->
+
 
 </head>
+
 <body>
     <header>
         <h1>Mukund's Portfolio</h1>
@@ -20,25 +23,11 @@
     </header>
 
     <main>
-
-        <!-- Modal Structure -->
-<div id="projectModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Project Details</h2>
-        <p>More details about the project will go here.</p>
-    </div>
-</div>
-
-
-
-        <!-- About Section -->
         <section id="about">
             <h2>About Me</h2>
             <p>Hello! I'm Mukund, a [your profession or hobby]. This is my personal website where I showcase my work and passion.</p>
         </section>
 
-        <!-- Projects Section -->
         <section id="projects">
             <h2>Projects</h2>
             <div class="project-carousel">
@@ -50,12 +39,9 @@
                     <h3>Project 2</h3>
                     <p>A brief description of your project.</p>
                 </div>
-                <!-- Add more projects as needed -->
             </div>
         </section>
-        
 
-        <!-- Contact Section -->
         <section id="contact">
             <h2>Contact</h2>
             <p>Email: your.email@example.com</p>
@@ -66,65 +52,8 @@
         <p>&copy; 2024 Mukund</p>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const sections = document.querySelectorAll('section');
-            
-            function checkVisibility() {
-                sections.forEach(section => {
-                    const rect = section.getBoundingClientRect();
-                    if (rect.top < window.innerHeight && rect.bottom >= 0) {
-                        section.classList.add('visible');
-                    }
-                });
-            }
+    <!-- Add JavaScript here -->
+    <script src="scripts.js"></script>
     
-            window.addEventListener('scroll', checkVisibility);
-            checkVisibility(); // Check visibility on page load
-        });
-    </script>
-    
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-
-<script>
-    $(document).ready(function(){
-        $('.project-carousel').slick({
-            dots: true,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 1,
-            slidesToScroll: 1
-        });
-    });
-</script>
-
-
-<script>
-    // Modal script
-    var modal = document.getElementById("projectModal");
-    var span = document.getElementsByClassName("close")[0];
-
-    function openModal() {
-        modal.style.display = "block";
-    }
-
-    function closeModal() {
-        modal.style.display = "none";
-    }
-
-    span.onclick = closeModal;
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            closeModal();
-        }
-    }
-</script>
-
-
-
 </body>
 </html>
-
-
