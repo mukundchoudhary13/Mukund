@@ -71,10 +71,10 @@ nav a:hover {
 }
 
 .resume-download {
-    color: #0b9d65;
+    color:  #0b9d65;
     text-decoration: none;
     font-size: 1.2rem;
-    background: rgb(229, 229, 229);
+    background: #0ff;
     padding: 10px 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(58, 125, 125, 0.7);
