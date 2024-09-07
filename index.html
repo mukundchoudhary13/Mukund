@@ -4,15 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mukund - Personal Website</title>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-<link rel="stylesheet" href="style.css"> <!-- Link to your CSS -->
-
-
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS -->
 </head>
-
 <body>
+    <!-- Header -->
     <header>
         <h1>Mukund's Portfolio</h1>
         <nav>
@@ -22,12 +17,15 @@
         </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
+        <!-- About Me Section -->
         <section id="about">
             <h2>About Me</h2>
             <p>Hello! I'm Mukund, a [your profession or hobby]. This is my personal website where I showcase my work and passion.</p>
         </section>
 
+        <!-- Projects Section -->
         <section id="projects">
             <h2>Projects</h2>
             <div class="project-carousel">
@@ -39,21 +37,32 @@
                     <h3>Project 2</h3>
                     <p>A brief description of your project.</p>
                 </div>
+                <!-- Add more projects as needed -->
             </div>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact">
             <h2>Contact</h2>
             <p>Email: your.email@example.com</p>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Mukund</p>
     </footer>
 
-    <!-- Add JavaScript here -->
+    <!-- Modal (hidden by default) -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Project Details</h2>
+            <p>More details about the project will go here.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
     <script src="scripts.js"></script>
-    
 </body>
 </html>
