@@ -7,31 +7,64 @@ body {
     color: #e0e0e0; /* Light text color */
     overflow-x: hidden;
 }
-
+/* Header Styles */
 header {
-    background: #222;
-    color: #0ff; /* Neon cyan */
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.8), rgba(255, 0, 255, 0.8)); /* Gradient background */
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    padding: 1rem;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.5);
     border-bottom: 2px solid #0ff;
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
 }
 
 header h1 {
+    font-size: 3rem;
     margin: 0;
-    font-size: 2.5rem;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7), 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+nav {
+    margin-top: 10px;
 }
 
 nav a {
-    color: #0ff;
+    color: #fff;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 20px;
     font-weight: bold;
+    font-size: 1.2rem;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
     transition: color 0.3s, text-shadow 0.3s;
 }
 
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #ff0; /* Neon yellow underline */
+    transition: width 0.3s, left 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
 nav a:hover {
-    color: #ff0; /* Neon yellow */
+    color: #ff0;
     text-shadow: 0 0 10px rgba(255, 255, 0, 0.7);
 }
 
